@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SensorActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+
+            android:id="@+id/accelerometer_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:text="Accelerometer Data: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/gyroscope_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/accelerometer_data"
+            android:layout_margin="15dp"
+            android:text="Gyroscope Data: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/barometer_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gyroscope_data"
+            android:layout_margin="15dp"
+            android:text="Barometer Data: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rotation_vector_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/barometer_data"
+            android:layout_margin="15dp"
+            android:text="Rotation Vector Data: "
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/proximity_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rotation_vector_data"
+            android:layout_margin="15dp"
+            android:text="Proximity Sensor Data: "
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ambient_light_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/proximity_data"
+            android:layout_margin="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="Ambient Light Data: "
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
